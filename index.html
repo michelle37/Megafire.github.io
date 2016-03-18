@@ -1,23 +1,100 @@
----
-layout: default
----
+<html><head>
+    <title>MegaFire App Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="mainPage.css" rel="stylesheet" type="text/css">
+    <style>
+      hr{
+           border: 0;
+     		 border-bottom: 1px dashed #ccc;
+       	 background: #999;}
+    </style>
+  </head><body data-spy="scroll">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>Mega Fire</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">MY APPS</a>
+            </li>
+            <li>
+              <a href="#">MY WEBSITES</a>
+            </li>
+            <li>
+              <a href="Blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="Contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?w=1024&amp;q=50&amp;fm=jpg&amp;s=2016c4932a7b7a1b629cb6890bff9977" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+            <h1>
+              <b>Michelle Lee</b>
+            </h1>
+            <h4 class="text-muted">&nbsp;iOS, &nbsp;Web Developer</h4>
+            <p class="text-muted">I am a US-based freelance iOS, and web developer. I have developed various
+              interactive and responsive web sites and recently, I have started iOS development
+              as a freelancer. I will be publish my iOS Apps in App store soon. &nbsp;You
+              can track my work interests and daily blog on this site.&nbsp;
+              <br>
+              <br>Please&nbsp;feel free to contact me for more information about me and
+              my services.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Recent Apps</h1>
+            <hr>
+            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+            <p></p>
+          </div>
+          <div class="col-md-6">
+            <h1>Latest Posts</h1>
+            <hr>
+            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body></html>
